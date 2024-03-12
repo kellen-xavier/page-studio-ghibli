@@ -1,0 +1,18 @@
+body {
+    width: 1917px;
+    height: 1024px;
+    background-color: darkgray;
+}
+
+.header {
+    width: 800px;
+    display: flex;
+    align-content: center;
+}
+
+.logo {
+    width: 166px;
+    height: 80px;
+    left: -0px;
+}
+
