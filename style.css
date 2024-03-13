@@ -1,7 +1,7 @@
 body {
     width: 1917px;
     height: 1024px;
-    background-color: darkgray;
+    background-image: url('assets/img/backgraund.png');
 }
 
 .header {
@@ -11,8 +11,10 @@ body {
 }
 
 .logo {
-    width: 166px;
+    width: 60px;
     height: 80px;
     left: -0px;
 }
+
+
 
