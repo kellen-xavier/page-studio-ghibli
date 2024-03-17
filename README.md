@@ -11,7 +11,7 @@ No seu ambiente local de trabalho, abra o terminal, e cole o seguinte código `g
 - Após o clone do projeto, acesse o diretório recém clonado;
 
 - Acesse e realize as configurações do arquivo .env (arquivo de exemplo - nome.env.exemple.json);
-
+lelelelle
 
 ## 📫 Colaboração
 

@@ -1,20 +1,50 @@
 body {
-    width: 1917px;
-    height: 1024px;
-    background-image: url('assets/img/backgraund.png');
+    margin: 0;
+    height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: url(assets/img/backgraund.png);
 }
 
 .header {
-    width: 800px;
     display: flex;
-    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    padding: 20px;
 }
 
-.logo {
-    width: 60px;
-    height: 80px;
-    left: -0px;
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: auto;
+    width: 1216px;
+    margin-top: 320px;
 }
 
+.grupo-descricao {
+    text-align: left;
+    color: aliceblue;
+}
 
+.botoes {
+    align-self: flex-end;
+}
 
+.imagem-ilustracao img {
+    
+    width: 340.06px;
+    height: 423.8px;
+    border-radius: 38.25390625;
+
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
