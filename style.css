@@ -24,8 +24,12 @@ body {
 
 .logo img {
     max-width: 100%;
-    height: auto;
     order: 1;
+    width: 166px;
+    height: 80px;
+    padding: 0px;
+    gap: 0px;
+    opacity: 0px;
 }
 
 .redes-sociais {
@@ -90,12 +94,9 @@ button:last-child {
 }
 
 .imagem-ilustracao img {
-    border-radius: 38.25390625;
+    border-radius: 40px;
     width: 574px;
-    height: 423.8px;
-    gap: 0px;
-    border-radius: 38.25px 0px 0px 0px;
-    opacity: 0px;
+    height: 540px;
 }
 
 button {
@@ -128,6 +129,40 @@ button:hover {
     font-weight: 700;
     line-height: 21.09px;
     text-align: center;
+}
+
+/* Estilos da modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.modal-content iframe {
+    width: 80%;
+    height: 80%;
+}
+
+.close {
+    color: #fff;
+    font-size: 24px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
 }
 
 /* Estilos para dispositivos móveis */

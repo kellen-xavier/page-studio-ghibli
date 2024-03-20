@@ -48,12 +48,24 @@
     </div>
 
     <div class="botoes">
-        <button class="assiste-filme">
-            Assista ao Filme
-        </button>
-        <button class="assiste-trailer">
-            Assista ao Trailer
+        <a href="https://www.justwatch.com/br/filme/a-viagem-de-chihiro" target="_blank">
+            <button class="assiste-filme">
+                Assista ao Filme
+            </button>
+        </a>
+        <button id="openModal" class="assiste-trailer">
+                Assista ao Trailer
         </button>
     </div>
+    
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="player"></div>
+        </div>
+    </div>
+</div>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="assets/js/script.js" defer></script>
 </body>
 </html>
