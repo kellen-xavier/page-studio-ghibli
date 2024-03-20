@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(assets/img/background.png);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(assets/img/backgraund.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
