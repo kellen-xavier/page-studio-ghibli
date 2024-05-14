@@ -4,7 +4,7 @@
 
 > Desenvolvimento de um Layout simples, para praticas básicas de frontend, estruturas de página.
 
-[Link do ambiente Homologado]()
+[Veja o resultado aqui](https://6643ed6034759e0fc209decd--project-studio-ghibli.netlify.app/)
 
 [Link do Layout no Figma](https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codel%C3%A2ndia?type=design&node-id=257087%3A1524&mode=design&t=M0fKzCya8UTBq2PW-1)
 
