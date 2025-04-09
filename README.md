@@ -8,8 +8,7 @@
 
 [Link do Layout no Figma](https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codel%C3%A2ndia?type=design&node-id=257087%3A1524&mode=design&t=M0fKzCya8UTBq2PW-1)
 
-
-### Clonar o projeto
+## Clonar o projeto
 
 - Para realizar o clone do projeto, clique em clone, escolha a forma que deseja fazer a clonagem (se por SSH ou HTTPS).
 No seu ambiente local de trabalho, abra o terminal, e cole o seguinte código `git clone [cole-o-link-copiado-aqui]` e execute o comando;

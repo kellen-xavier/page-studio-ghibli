@@ -62,7 +62,7 @@ body {
 }
 
 .grupo-descricao {
-  font-family: Open Sans;
+  font-family: Open Sans, sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 27.24px;
@@ -71,7 +71,7 @@ body {
 }
 
 .titulo-destaque {
-  font-family: Andada Pro;
+  font-family: Andada Pro, serif;
   font-size: 64px;
   font-weight: 800;
   line-height: 70.4px;
@@ -80,7 +80,7 @@ body {
 }
 
 .sinopse {
-  font-family: Archivo;
+  font-family: Archivo, sans-serif;
   font-size: 24px;
   font-weight: 500;
   line-height: 36px;
@@ -108,14 +108,13 @@ button {
   border: 2px solid #f1a5b1;
   background-color: transparent;
   padding: 14px 32px;
-  font-family: inherit;
   cursor: pointer;
   outline: none;
   transition: background-color 0.3s ease;
   margin-left: 10px;
 
   color: #ffffff;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 21.09px;
@@ -130,7 +129,7 @@ button {
 button:hover {
   background: #f1a5b1;
   color: #0b0a0a;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 21.09px;
