@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,7 +45,7 @@
         </div>
 
         <div class="imagem-ilustracao">
-            <img src="assets/img/illustration.png" alt="">
+            <img src="assets/img/illustration.png" alt="Ilustração de A Viagem de Chihiro" loading="lazy">
         </div>
     </div>
 
@@ -54,19 +55,20 @@
                 Assista ao Filme
             </button>
         </a>
-        <button id="openModal" class="assiste-trailer">
-                Assista ao Trailer
+        <button id="openModal" class="assiste-trailer" aria-label="Abrir trailer do filme A Viagem de Chihiro">
+            Assista ao Trailer
         </button>
     </div>
-    
+
     <div id="modal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
             <div id="player"></div>
         </div>
     </div>
-</div>
+    </div>
     <script src="https://www.youtube.com/iframe_api"></script>
     <script src="assets/js/script.js" defer></script>
 </body>
+
 </html>
