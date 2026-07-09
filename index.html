@@ -3,7 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landing page inspirada no filme A Viagem de Chihiro, do Studio Ghibli.">
     <title>Ghibli</title>
+    <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="A Viagem de Chihiro - Studio Ghibli">
+    <meta property="og:description" content="Landing page inspirada no filme A Viagem de Chihiro, do Studio Ghibli.">
+    <meta property="og:image" content="assets/img/illustration.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:wght@800&family=Archivo:wght@500&family=Open+Sans:wght@700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,16 +26,16 @@
         </div>
 
         <div class="redes-sociais">
-            <a href="https://www.google.com" target="_blank">
+            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
                 <img src="assets/img/link-google.png" alt="Google">
             </a>
-            <a href="https://www.facebook.com" target="_blank">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
                 <img src="assets/img/link-facebook.png" alt="Facebook">
             </a>
-            <a href="https://www.instagram.com" target="_blank">
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
                 <img src="assets/img/link-instagram.png" alt="Instagram">
             </a>
-            <a href="https://www.twitter.com" target="_blank">
+            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
                 <img src="assets/img/link-twitter.png" alt="Twitter">
             </a>
         </div>
@@ -44,15 +56,13 @@
         </div>
 
         <div class="imagem-ilustracao">
-            <img src="assets/img/illustration.png" alt="">
+            <img src="assets/img/illustration.png" alt="Ilustração de Chihiro no mundo mágico do filme">
         </div>
     </div>
 
     <div class="botoes">
-        <a href="https://www.justwatch.com/br/filme/a-viagem-de-chihiro" target="_blank">
-            <button class="assiste-filme">
-                Assista ao Filme
-            </button>
+        <a href="https://www.justwatch.com/br/filme/a-viagem-de-chihiro" target="_blank" rel="noopener noreferrer" class="assiste-filme">
+            Assista ao Filme
         </a>
         <button id="openModal" class="assiste-trailer">
                 Assista ao Trailer
@@ -65,8 +75,16 @@
             <div id="player"></div>
         </div>
     </div>
-</div>
-    <script src="https://www.youtube.com/iframe_api"></script>
+
+    <script>
+        function handleYouTubeApiError() {
+            var playerEl = document.getElementById('player');
+            if (playerEl) {
+                playerEl.innerHTML = '<p class="player-fallback">Não foi possível carregar o player. <a href="https://www.youtube.com/watch?v=ByXuk9QqQkk" target="_blank" rel="noopener noreferrer">Assista no YouTube</a>.</p>';
+            }
+        }
+    </script>
+    <script src="https://www.youtube.com/iframe_api" onerror="handleYouTubeApiError()"></script>
     <script src="assets/js/script.js" defer></script>
 </body>
 </html>
