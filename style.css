@@ -1,8 +1,32 @@
+:root {
+  /* Cores */
+  --color-text: #ffffff;
+  --color-text-invert: #0b0a0a;
+  --color-accent: #f1a5b1;
+  --color-overlay-top: rgba(0, 0, 0, 0.6);
+  --color-overlay-bottom: rgba(0, 0, 0, 0.9);
+  --color-modal-backdrop: rgba(0, 0, 0, 0.9);
+
+  /* Fontes */
+  --font-heading: "Andada Pro", serif;
+  --font-body: "Open Sans", sans-serif;
+  --font-synopsis: "Archivo", sans-serif;
+  --font-ui: "Roboto", sans-serif;
+
+  /* Medidas */
+  --content-max-width: 1200px;
+  --radius: 40px;
+  --transition: 0.3s ease;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
-  width: 100vw;
-  height: 100vh;
-  gap: 0px;
-  opacity: 0px;
+  min-height: 100vh;
   margin: 0;
   overflow-x: hidden;
   display: flex;
@@ -10,19 +34,27 @@ body {
   align-items: center;
   background-image: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.9)
+      var(--color-overlay-top),
+      var(--color-overlay-bottom)
     ),
-    url(assets/img/backgraund.png);
+    url(assets/img/background.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  width: 1200px;
+  width: 100%;
+  max-width: var(--content-max-width);
   padding: 20px;
   margin-bottom: 20px;
 }
@@ -32,9 +64,6 @@ body {
   order: 1;
   width: 166px;
   height: 80px;
-  padding: 0px;
-  gap: 0px;
-  opacity: 0px;
 }
 
 .redes-sociais {
@@ -45,7 +74,7 @@ body {
   width: 232px;
   height: 40px;
   gap: 26px;
-  transition: transform 0.3s ease;
+  transition: transform var(--transition);
 }
 
 .redes-sociais img:hover {
@@ -54,99 +83,98 @@ body {
 
 .conteudo {
   margin-top: 10%;
-  width: 1200px;
-  height: 450px;
+  width: 100%;
+  max-width: var(--content-max-width);
+  min-height: 450px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
 }
 
 .grupo-descricao {
-  font-family: Open Sans, sans-serif;
-  font-size: 20px;
+  font-family: var(--font-body);
+  font-size: 1.25rem;
   font-weight: 700;
-  line-height: 27.24px;
+  line-height: 1.35;
   text-align: left;
-  color: #ffffff;
+  color: var(--color-text);
 }
 
 .titulo-destaque {
-  font-family: Andada Pro, serif;
-  font-size: 64px;
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 8vw, 4rem);
   font-weight: 800;
-  line-height: 70.4px;
+  line-height: 1.1;
   text-align: left;
-  color: #ffffff;
+  color: var(--color-text);
 }
 
 .sinopse {
-  font-family: Archivo, sans-serif;
-  font-size: 24px;
+  font-family: var(--font-synopsis);
+  font-size: 1.5rem;
   font-weight: 500;
-  line-height: 36px;
+  line-height: 1.5;
   text-align: left;
 }
 
 .botoes {
   display: flex;
-  justify-content: left;
+  justify-content: flex-start;
   width: 35%;
   margin-bottom: 20%;
 }
 
-button:last-child {
-  margin-right: 0;
-}
-
 .imagem-ilustracao img {
-  border-radius: 40px;
+  border-radius: var(--radius);
   width: 574px;
   height: 540px;
 }
 
-button {
-  border: 2px solid #f1a5b1;
+.assiste-filme,
+.assiste-trailer {
+  display: inline-block;
+  border: 2px solid var(--color-accent);
   background-color: transparent;
   padding: 14px 32px;
   cursor: pointer;
-  outline: none;
-  transition: background-color 0.3s ease;
+  transition: background-color var(--transition);
   margin-left: 10px;
+  text-decoration: none;
 
-  color: #ffffff;
-  font-family: Roboto, sans-serif;
-  font-size: 18px;
+  color: var(--color-text);
+  font-family: var(--font-ui);
+  font-size: 1.125rem;
   font-weight: 700;
-  line-height: 21.09px;
+  line-height: 1.2;
   text-align: center;
 }
 
-.assiste-filme,
-.assiste-trailer {
-  border: 2px solid #f1a5b1;
+.assiste-filme:hover,
+.assiste-trailer:hover {
+  background: var(--color-accent);
+  color: var(--color-text-invert);
 }
 
-button:hover {
-  background: #f1a5b1;
-  color: #0b0a0a;
-  font-family: Roboto, sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 21.09px;
-  text-align: center;
+.assiste-filme:focus-visible,
+.assiste-trailer:focus-visible,
+.close:focus-visible,
+.redes-sociais a:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
 }
 
 /* Estilos da modal */
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 1000;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: var(--color-modal-backdrop);
 }
 
 .modal-content {
@@ -162,20 +190,43 @@ button:hover {
 }
 
 .close {
-  color: #fff;
-  font-size: 24px;
   position: absolute;
   top: 10px;
   right: 20px;
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--color-text);
+  font-size: 1.5rem;
+  line-height: 1;
   cursor: pointer;
+}
+
+.player-fallback {
+  color: var(--color-text);
+  font-family: var(--font-ui);
+  font-size: 1rem;
+  text-align: center;
+  padding: 20px;
+}
+
+.player-fallback a {
+  color: var(--color-accent);
 }
 
 /* Estilos para dispositivos móveis */
 @media only screen and (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
   .conteudo {
     margin-top: 5%;
     width: 90%;
     height: auto;
+    min-height: auto;
     flex-direction: column;
     align-items: center;
   }
@@ -192,8 +243,22 @@ button:hover {
     margin-bottom: 10%;
   }
 
-  button {
+  .assiste-filme,
+  .assiste-trailer {
     padding: 12px 24px;
     margin: 0;
+  }
+}
+
+/* Respeita usuários que preferem menos movimento */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
+
+  .redes-sociais img:hover {
+    transform: none;
   }
 }
