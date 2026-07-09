@@ -24,7 +24,7 @@ Encontrou um bug ou tem uma sugestão de melhoria para este projeto?
 ## Tecnologias e documentações
 
 - [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
-- [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS) (Flexbox e Media Queries para responsividade)
+- [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS) (Flexbox, Media Queries e variáveis CSS para responsividade)
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) (Vanilla JS)
 - [YouTube IFrame Player API](https://developers.google.com/youtube/iframe_api_reference) para o modal de trailer
 - [Google Fonts](https://fonts.google.com/) (Open Sans, Andada Pro, Archivo, Roboto)

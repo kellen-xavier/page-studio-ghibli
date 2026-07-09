@@ -1,3 +1,10 @@
-# IDEA
+# Editores / IDEs
 .vscode
 .idea
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
