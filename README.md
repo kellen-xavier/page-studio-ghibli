@@ -16,14 +16,18 @@ No seu ambiente local de trabalho, abra o terminal, e cole o seguinte código `g
 
 ## 📫 Colaboração
 
-Siga estas etapas:
+Encontrou um bug ou tem uma sugestão de melhoria para este projeto?
 
-1. Acesse o link do Figma.
-2. Selecione um template.
-3. Faça seu projeto com qualquer tecnologia.
-4. Envie para o branch original: `git push origin <dentro da branch em desenvolvimento>`
+1. Abra uma [issue](../../issues) descrevendo o problema ou a sugestão.
+2. Ou faça um fork, crie uma branch (`git checkout -b minha-melhoria`) e abra um Pull Request com a mudança.
 
 ## Tecnologias e documentações
+
+- [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+- [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS) (Flexbox e Media Queries para responsividade)
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) (Vanilla JS)
+- [YouTube IFrame Player API](https://developers.google.com/youtube/iframe_api_reference) para o modal de trailer
+- [Google Fonts](https://fonts.google.com/) (Open Sans, Andada Pro, Archivo, Roboto)
 
 ## 📝 Licença
 
