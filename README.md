@@ -4,6 +4,11 @@
 
 > Desenvolvimento de um Layout simples, para praticas básicas de frontend, estruturas de página.
 
+### Objetivo
+
+Praticar semanticas de linguagem de marcação, testar e colocar o projeto disponível no ambiente vercel app - simples, sem consunmir recursos.
+Aplicar estudos sobre: como aplicar frontend de forma fidedigna com UI/UX pronta no figma.
+
 [Veja o resultado aqui](https://project-studio-ghibli.netlify.app/)
 
 [Link do Layout no Figma](https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codel%C3%A2ndia?type=design&node-id=257087%3A1524&mode=design&t=M0fKzCya8UTBq2PW-1)
